@@ -1,24 +1,104 @@
-<h2>CatPhotoApp</h2>
-<main>
+<!DOCTYPE html>
+<html lang="en">
 
-<p>
-  View more: <a href="#">cat photos</a>
-  {# vc pode adicionar um link a para fazer com que o usuário além de ir para uma página
-  externa a seu site, também possa navegar pelo seu site e principalemnte, ser redirecionado a
-  seções da mesma paǵina, por exemplo, clilcar em FAQ e ir pra o final da página com o link ou o email
-  de atendimento ao clinete #}
-  <a href="#footer">Jump to Bottom</a>
-</p>
-{# configurando o href com #, transformamos o a em um dead link #}
-<a href="#">
-  <img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
-</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
-  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
-  <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
-  <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+  <title>The best page ever</title>
+</head>
 
-</main>
+<body>
+  <h1>The best page ever</h1>
 
-<footer id = "footer">Copyright Cat Photo App</footer>
+  <p>Cat ipsum dolor sit amet, jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box
+    until treats are fed. Go into a room to decide you didn't want to be in there anyway. I like big cats and i can not
+    lie kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot,
+    hairball run catnip eat the grass sniff. Meow i could pee on this if i had the energy for slap owner's face at 5am
+    until human fills food dish yet scamper. Knock dish off table head butt cant eat out of my own dish scratch the
+    furniture. Make meme, make cute face. Sleep in the bathroom sink chase laser but pee in the shoe. Paw at your fat
+    belly licks your face and eat grass, throw it back up kitty ipsum dolor sit amet, shed everywhere shed everywhere
+    stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  
+  <h2 class="red-text">CatPhotoApp</h2>  
+  <main>
+    <p class="red-text">
+      View more: <a href="#">cat photos</a>
+      <!--  vc pode adicionar um link a para fazer com que o usuário além de ir para uma página
+        externa a seu site, também possa navegar pelo seu site e principalemnte, ser redirecionado a
+        seções da mesma paǵina, por exemplo, clicar em FAQ e ir pra o final da página com o link ou o email
+        de atendimento ao cliente -->
+      <a href="#footer">Jump to Bottom</a>
+    </p>
+    <!-- configurando o href com #, transformamos a tag a em um dead link -->
+    <a href="#">
+      <img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+    </a>
+
+    <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot,
+      hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere
+      rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed
+      everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+    <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy
+      fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles
+      chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched
+      sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+
+    <div>
+      <p>Top 3 things cats love:</p>
+      <ul>
+        <li>cheese</li>
+        <li>fish</li>
+        <li>milk</li>
+      </ul>
+
+      <p>Top 3 things cats hate:</p>
+      <ol>
+        <li>rat</li>
+        <li>dogs</li>
+        <li>water</li>
+      </ol>
+    </div>
+    <!-- forma de enviar informações do usuário há um determinado servidor, isso pode ser feito criando um
+        formulário web usando HTML puro com uma action, geralmente essa propriedade recebe um endereço e 
+        o formulário também pode possuir uma propriedade chamada mehotd em que é informado qual método HTTPs 
+        será utilizado -->
+
+    <form action="https://freecatphotoapp.com/submit-cat-photo">
+      <input type="text" placeholder="to cat photo URL" required>
+
+      <!-- craindo botões radiais(que se preenchem) e checkbox
+              dessa forma, o checkbox pode assumir mais de uma opção, enquanto o radial assume somente uma posição
+        -->
+      <label for="indoor">
+        <input type="radio" name="indoor-outdoor" id="indoor" value="indoor" checked>Indoor
+      </label>
+
+      <label for="outdoor">
+        <input type="radio" name="indoor-outdoor" id="outdoor" value="outdoor">Outdoor
+      </label><br>
+
+      <label for="loving">
+        <input type="checkbox" name="personality" id="loving" value="loving" checked>Loving
+      </label>
+
+      <label for="lazy">
+        <input type="checkbox" name="personality" id="lazy" value="lazy">Lazy
+      </label>
+
+      <label for="energetic">
+        <input type="checkbox" name="personality" id="energetic" value="energetic">Energetic
+      </label><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </main>
+
+  <footer id="footer">Copyright Cat Photo App</footer>
+</body>
+
+</html>
