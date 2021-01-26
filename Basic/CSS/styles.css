@@ -1,0 +1,29 @@
+.red-text {
+    color: red  
+}
+
+h2 {
+    font-family: 'Lobster', monospace;
+}
+
+p {
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+.smaller-image {
+    width: 6.25rem;
+}
+
+.thick-green-border {
+    border: 0.625rem solid green;
+    border-radius: 50%;
+}
+
+.silver-background {
+    background-color: silver;
+}
+
+#cat-photo-form {
+    background-color: green;
+}
