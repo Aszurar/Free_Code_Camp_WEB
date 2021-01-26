@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../CSS/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
@@ -47,7 +47,7 @@
       chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched
       sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
 
-    <div>
+    <div class="silver-background">
       <p>Top 3 things cats love:</p>
       <ul>
         <li>cheese</li>
@@ -67,7 +67,8 @@
         o formulário também pode possuir uma propriedade chamada mehotd em que é informado qual método HTTPs 
         será utilizado -->
 
-    <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <form id="cat-photo-form" action="https://freecatphotoapp.com/submit-cat-photo">
+    <!-- o id possui maior prioridade sobre as classes, ou seja, as estilizações do ID sempre sobrepõe as classes -->
       <input type="text" placeholder="to cat photo URL" required>
 
       <!-- craindo botões radiais(que se preenchem) e checkbox
