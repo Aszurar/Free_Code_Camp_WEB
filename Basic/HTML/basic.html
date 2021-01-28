@@ -71,9 +71,17 @@
     <!-- o id possui maior prioridade sobre as classes, ou seja, as estilizações do ID sempre sobrepõe as classes -->
       <input type="text" placeholder="to cat photo URL" required>
 
-      <!-- craindo botões radiais(que se preenchem) e checkbox
+      <!-- criando botões radiais(que se preenchem) e checkbox
               dessa forma, o checkbox pode assumir mais de uma opção, enquanto o radial assume somente uma posição
         -->
+
+        <!-- É considerado boa prática explicitar o relacionamento dos labels com seus inputs a partir do atributo for
+          na tag lavel recebendo o mesmo valor do id de seu input. Isso permite que tecnologias assistivas vinculem seu label
+          com seu input -->
+
+          <!--Abaixo estamos criando 2 grupos de opções, primeiro o grupo de opções dos butões raidiais que se indetificam pelo
+            mesmo nome: indoor-outdoor, nesse caso, como explicado acima, caso 1 esteja selecionado, o outro será desmarcado  -->
+
       <label for="indoor">
         <input type="radio" name="indoor-outdoor" id="indoor" value="indoor" checked>Indoor
       </label>
@@ -82,6 +90,8 @@
         <input type="radio" name="indoor-outdoor" id="outdoor" value="outdoor">Outdoor
       </label><br>
 
+      <!-- O 2º grupo de opões é o de checkbox, que é indetificado pelo mesmo nome: personality, mas nesse caso pode-se ter mais
+            de uma opção marcada -->
       <label for="loving">
         <input type="checkbox" name="personality" id="loving" value="loving" checked>Loving
       </label>
