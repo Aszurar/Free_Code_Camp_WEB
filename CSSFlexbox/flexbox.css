@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    display: flex;
+}
+
+h4 {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    flex-direction:row;
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.follow-btn {
+    display: flex;
+}
+
+.stats {
+    display: flex;
+}
